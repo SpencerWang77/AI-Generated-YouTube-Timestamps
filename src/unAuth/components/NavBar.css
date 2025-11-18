@@ -3,10 +3,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 32px;
-  background: rgba(255, 255, 255, 0.85);
+  background: #25273d;
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(102, 126, 234, 0.1);
 }
 
 .nav-brand {
@@ -15,7 +16,7 @@
   gap: 12px;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #4a4a68;
+  color: #f0f4ff;
 }
 
 .nav-logo {
@@ -23,8 +24,10 @@
   height: 40px;
   object-fit: contain;
   transform: translateY(3px);
-  /* border-radius: 12px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);  */
+  background: #8771F7;
+  border-radius: 8px;
+  padding: 6px;
+  box-sizing: border-box;
 }
 
 .nav-links {
@@ -35,12 +38,12 @@
 .nav-links a {
   text-decoration: none;
   font-weight: 600;
-  color: #667eea;
+  color: #c4b5fd;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #764ba2;
+  color: #8b5cf6;
 }
 
 @media (max-width: 600px) {

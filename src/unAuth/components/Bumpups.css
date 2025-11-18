@@ -5,7 +5,7 @@
 .bumpups-title {
   text-align: center;
   font-size: 1.5rem;
-  color: #4a4a68;
+  color: #ffffff;
   margin-bottom: 24px;
 }
 
@@ -16,21 +16,28 @@
 }
 
 .bumpup-card {
-  background: #f7f8ff;
+  background: #1f2135;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.bumpup-card:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  transform: translateY(-2px);
 }
 
 .bumpup-card h3 {
   margin: 0 0 8px;
   font-size: 1.1rem;
-  color: #33334d;
+  color: #ffffff;
 }
 
 .bumpup-card p {
   margin: 0;
-  color: #5b5b7a;
+  color: #c8cad8;
   line-height: 1.4;
   font-size: 0.95rem;
 }

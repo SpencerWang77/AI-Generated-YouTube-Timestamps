@@ -3,10 +3,11 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  background: rgba(102, 126, 234, 0.1);
+  background: rgba(139, 92, 246, 0.15);
   border-radius: 999px;
   font-size: 0.9rem;
-  color: #4a4a68;
+  color: #c4b5fd;
+  border: 1px solid rgba(139, 92, 246, 0.2);
 }
 
 .timestamp span {
@@ -15,6 +16,6 @@
 
 .timestamp time {
   font-variant-numeric: tabular-nums;
-  color: #667eea;
+  color: #8b5cf6;
 }
 

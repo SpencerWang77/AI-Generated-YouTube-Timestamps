@@ -10,6 +10,9 @@ function LandingPage() {
     <div className="landing-page">
       <div className="landing-shell">
         <NavBar />
+        {/* <Bumpups />
+        <Timestamp />
+        <Footer /> */}
         <div className="landing-content">
           <section className="landing-hero">
             <p className="landing-kicker">Preview Build</p>

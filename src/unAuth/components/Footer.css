@@ -1,0 +1,13 @@
+.landing-footer {
+  margin-top: 40px;
+  padding: 24px;
+  text-align: center;
+  color: #f7f8ff;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.landing-footer p {
+  margin: 0;
+}
+

@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer className="landing-footer">
-      <p>© {year} My React App. All rights reserved.</p>
+      <p>© {year} AI-powered YouTube Video Timestamp Generator by Spencer Wang. All rights reserved.</p>
     </footer>
   );
 }

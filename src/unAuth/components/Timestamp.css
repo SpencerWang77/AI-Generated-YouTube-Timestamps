@@ -17,10 +17,11 @@
   min-width: 0; /* Allows flex items to shrink below their content size */
 }
 
-/* Link icon */
+/* YouTube icon */
 .timestamp-input-icon {
   margin-right: 6px;
   font-size: 18px;
+  color: #ff0000; /*YouTube red color*/
 }
 
 /* Input styling */
@@ -74,6 +75,46 @@
   font-size: 13px;
 }
 
+/* Loading state */
+.timestamp-loading {
+  margin-top: 20px;
+  text-align: center;
+  color: #c8cad8;
+  font-size: 14px;
+}
+
+/* Video info container */
+.timestamp-video-info {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Video thumbnail */
+.timestamp-thumbnail {
+  max-width: 100%;
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(102, 126, 234, 0.2);
+}
+
+/* Video title */
+.timestamp-title {
+  margin: 0;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.4;
+  max-width: 640px;
+  padding: 0 16px;
+}
+
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .timestamp-widget {
@@ -100,6 +141,11 @@
     margin-left: 6px;
     font-size: 13px;
   }
+
+  .timestamp-title {
+    font-size: 1.1rem;
+    padding: 0 12px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -122,5 +168,15 @@
     padding: 8px 12px;
     margin-left: 4px;
     font-size: 12px;
+  }
+
+  .timestamp-title {
+    font-size: 1rem;
+    padding: 0 8px;
+  }
+
+  .timestamp-video-info {
+    margin-top: 20px;
+    gap: 12px;
   }
 }

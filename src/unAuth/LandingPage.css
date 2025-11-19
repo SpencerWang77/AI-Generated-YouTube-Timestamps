@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1a1b2e;
+  background: var(--bg-primary);
   padding: 60px 20px;
 }
 
@@ -17,16 +17,16 @@
 }
 
 .landing-content {
-  background: #25273d;
+  background: var(--bg-secondary);
   padding: 56px;
   border-radius: 28px;
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 30px 80px var(--shadow-dark);
   display: flex;
   flex-direction: column;
   gap: 32px;
   width: 70%;
   margin: 0 auto;
-  border: 1px solid rgba(102, 126, 234, 0.1);
+  border: 1px solid var(--blue-purple-border-light);
   box-sizing: border-box;
   overflow-x: hidden; /* Prevents horizontal overflow */
 }
@@ -41,7 +41,7 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
   font-size: 0.85rem;
-  color: #a0a4c4;
+  color: var(--text-muted);
   margin: 0;
 }
 
@@ -49,14 +49,14 @@
   font-size: 3rem;
   font-weight: 800;
   margin: 0;
-  color: #8771F7;
+  color: var(--purple-primary);
 }
 
 .landing-description {
   margin: 0;
   margin-top: 20px;
   font-size: 1.05rem;
-  color: #c8cad8;
+  color: var(--text-secondary);
   line-height: 1.6;
 }
 
@@ -79,26 +79,26 @@
 }
 
 .landing-primary {
-  background: #8b5cf6;
-  color: #fff;
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.3);
+  background: var(--purple-button);
+  color: var(--text-primary);
+  box-shadow: 0 10px 25px var(--shadow-purple-light);
 }
 
 .landing-primary:hover {
-  background: #7c3aed;
-  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+  background: var(--purple-button-hover);
+  box-shadow: 0 10px 25px var(--shadow-purple-medium);
   transform: translateY(-1px);
 }
 
 .landing-secondary {
-  background: rgba(139, 92, 246, 0.15);
-  color: #c4b5fd;
-  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: var(--purple-light-bg);
+  color: var(--text-light-purple);
+  border: 1px solid var(--purple-border);
 }
 
 .landing-secondary:hover {
-  background: rgba(139, 92, 246, 0.25);
-  color: #ddd6fe;
+  background: var(--purple-medium-bg);
+  color: var(--text-lighter-purple);
   transform: translateY(-1px);
 }
 

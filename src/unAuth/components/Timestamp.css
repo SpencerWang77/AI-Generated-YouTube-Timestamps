@@ -10,7 +10,7 @@
 .timestamp-input-row {
   display: flex;
   align-items: center;
-  background-color: #303134;
+  background-color: var(--bg-input);
   border-radius: 14px;
   padding: 0 6px 0 12px;
   height: 48px;
@@ -21,7 +21,7 @@
 .timestamp-input-icon {
   margin-right: 6px;
   font-size: 18px;
-  color: #ff0000; /*YouTube red color*/
+  color: var(--youtube-red);
 }
 
 /* Input styling */
@@ -30,7 +30,7 @@
   min-width: 0; /* Allows input to shrink */
   border: none;
   background: transparent;
-  color: #ffffff;
+  color: var(--text-primary);
   padding: 10px 8px;
   font-size: 14px;
   outline: none;
@@ -42,12 +42,12 @@
   padding: 10px 20px;
   margin-left: 8px;
   border-radius: 12px;
-  background-color: #1a73e8;
-  color: #ffffff;
+  background-color: var(--button-blue);
+  color: var(--text-primary);
   font-weight: 600;
   font-size: 14px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 4px 10px var(--shadow-medium-dark);
   transition: background-color 0.2s ease,
               transform 0.15s ease,
               box-shadow 0.15s ease,
@@ -81,21 +81,21 @@
 
 /* Hover animation */
 .timestamp-button:hover:not(:disabled) {
-  background-color: #1666cc;
+  background-color: var(--button-blue-hover);
   transform: translateY(-1px) scale(1.04);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 18px var(--shadow-darker);
 }
 
 /* Click effect */
 .timestamp-button:active:not(:disabled) {
   transform: translateY(0) scale(0.97);
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 8px var(--shadow-dark);
 }
 
 /* Error message */
 .timestamp-error {
   margin-top: 6px;
-  color: #ff8a80;
+  color: var(--error-red);
   font-size: 13px;
 }
 
@@ -103,7 +103,7 @@
 .timestamp-loading {
   margin-top: 20px;
   text-align: center;
-  color: #c8cad8;
+  color: var(--text-secondary);
   font-size: 14px;
 }
 
@@ -125,9 +125,9 @@
   height: 0;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(102, 126, 234, 0.2);
-  background: #000;
+  box-shadow: 0 8px 24px var(--shadow-dark);
+  border: 1px solid var(--blue-purple-border-medium);
+  background: var(--bg-black);
 }
 
 /* YouTube video player iframe */
@@ -144,7 +144,7 @@
 /* Video title */
 .timestamp-title {
   margin: 0;
-  color: #ffffff;
+  color: var(--text-primary);
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;

@@ -1,4 +1,48 @@
 /* Global app styles for dark theme */
+:root {
+  /* Background Colors */
+  --bg-primary: #1a1b2e;
+  --bg-secondary: #25273d;
+  --bg-tertiary: #1f2135;
+  --bg-input: #303134;
+  --bg-black: #000000;
+
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #c8cad8;
+  --text-muted: #a0a4c4;
+  --text-brand: #f0f4ff;
+  --text-light-purple: #c4b5fd;
+  --text-lighter-purple: #ddd6fe;
+
+  /* Purple/Accent Colors */
+  --purple-primary: #8771F7;
+  --purple-button: #8b5cf6;
+  --purple-button-hover: #7c3aed;
+  --purple-light-bg: rgba(139, 92, 246, 0.15);
+  --purple-medium-bg: rgba(139, 92, 246, 0.25);
+  --purple-border: rgba(139, 92, 246, 0.3);
+  --blue-purple-border-light: rgba(102, 126, 234, 0.1);
+  --blue-purple-border-medium: rgba(102, 126, 234, 0.2);
+
+  /* Button Colors */
+  --button-blue: #1a73e8;
+  --button-blue-hover: #1666cc;
+
+  /* Status Colors */
+  --error-red: #ff8a80;
+  --youtube-red: #ff0000;
+
+  /* Shadow Colors */
+  --shadow-light: rgba(0, 0, 0, 0.2);
+  --shadow-medium: rgba(0, 0, 0, 0.3);
+  --shadow-medium-dark: rgba(0, 0, 0, 0.35);
+  --shadow-dark: rgba(0, 0, 0, 0.4);
+  --shadow-darker: rgba(0, 0, 0, 0.5);
+  --shadow-purple-light: rgba(139, 92, 246, 0.3);
+  --shadow-purple-medium: rgba(139, 92, 246, 0.5);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,8 +50,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: #1a1b2e;
-  color: #ffffff;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

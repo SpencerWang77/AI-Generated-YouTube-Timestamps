@@ -3,11 +3,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 32px;
-  background: #25273d;
+  background: var(--bg-secondary);
   backdrop-filter: blur(10px);
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(102, 126, 234, 0.1);
+  box-shadow: 0 12px 30px var(--shadow-medium);
+  border: 1px solid var(--blue-purple-border-light);
 }
 
 .nav-brand {
@@ -16,7 +16,7 @@
   gap: 12px;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #f0f4ff;
+  color: var(--text-brand);
 }
 
 .nav-logo {
@@ -24,7 +24,7 @@
   height: 40px;
   object-fit: contain;
   transform: translateY(3px);
-  background: #8771F7;
+  background: var(--purple-primary);
   border-radius: 8px;
   padding: 6px;
   box-sizing: border-box;
@@ -38,12 +38,12 @@
 .nav-links a {
   text-decoration: none;
   font-weight: 600;
-  color: #c4b5fd;
+  color: var(--text-light-purple);
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #8b5cf6;
+  color: var(--purple-button);
 }
 
 @media (max-width: 600px) {

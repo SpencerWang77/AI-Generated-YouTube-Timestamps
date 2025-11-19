@@ -2,7 +2,7 @@
   margin-top: 40px;
   padding: 24px;
   text-align: center;
-  color: #a0a4c4;
+  color: var(--text-muted);
   font-size: 0.9rem;
   opacity: 0.8;
 }

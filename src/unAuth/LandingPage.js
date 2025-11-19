@@ -12,8 +12,8 @@ function LandingPage() {
         <NavBar />
         <div className="landing-content">
           <section className="landing-hero">
-            <p className="landing-kicker">Preview Build</p>
-            <h1 className="landing-title">Hello Landing Page</h1>
+            <p className="landing-kicker">BY SPENCER WANG</p>
+            <h1 className="landing-title">Welcome to the Timestamp Generator</h1>
             <p className="landing-description">
               This is a lightweight placeholder layout showing how child components plug
               into the landing page. Each block has its own CSS so you can extend it
@@ -25,7 +25,7 @@ function LandingPage() {
               <Timestamp />
             </div>
           </section>
-          <Bumpups />
+          {/* <Bumpups /> */}
         </div>
         <Footer />
       </div>

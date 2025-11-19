@@ -20,11 +20,11 @@ function LandingPage() {
               Enter a YouTube video URL below and click the button to generate timestamps.
             </p>
             <Timestamp />
-            <div className="landing-actions">
+            {/* <div className="landing-actions">
               <button className="landing-primary">Get Started</button>
               <button className="landing-secondary">Learn More</button>
               
-            </div>
+            </div> */}
           </section>
           {/* <Bumpups /> */}
         </div>

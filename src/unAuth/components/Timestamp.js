@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import './Timestamp.css';
 
 const YOUTUBE_URL_REGEX =
@@ -78,6 +79,7 @@ function Timestamp() {
       if (data.items && data.items.length > 0) {
         const video = data.items[0];
         setVideoData({
+          videoId: videoId,
           title: video.snippet.title,
           thumbnail: video.snippet.thumbnails.maxres?.url || 
                      video.snippet.thumbnails.high?.url || 
@@ -120,7 +122,15 @@ function Timestamp() {
           type="button"
           className="timestamp-button"
           onClick={handleGenerate}
+          disabled={loading}
         >
+          {loading && (
+            <FontAwesomeIcon 
+              icon={faSpinner} 
+              className="timestamp-button-spinner"
+              spin
+            />
+          )}
           Generate
         </button>
       </div>
@@ -135,11 +145,16 @@ function Timestamp() {
 
       {videoData && (
         <div className="timestamp-video-info">
-          <img 
-            src={videoData.thumbnail} 
-            alt={videoData.title}
-            className="timestamp-thumbnail"
-          />
+          <div className="timestamp-video-wrapper">
+            <iframe
+              src={`https://www.youtube.com/embed/${videoData.videoId}`}
+              title={videoData.title}
+              className="timestamp-video-player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <h3 className="timestamp-title">{videoData.title}</h3>
         </div>
       )}
@@ -148,3 +163,4 @@ function Timestamp() {
 }
 
 export default Timestamp;
+

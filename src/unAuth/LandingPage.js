@@ -15,14 +15,15 @@ function LandingPage() {
             <p className="landing-kicker">BY SPENCER WANG</p>
             <h1 className="landing-title">Welcome to the Timestamp Generator</h1>
             <p className="landing-description">
-              This is a lightweight placeholder layout showing how child components plug
-              into the landing page. Each block has its own CSS so you can extend it
-              later.
+              Welcome to my first software project!
+              This is a minimalistic site for a YouTube video timestamp generator built with React.
+              Enter a YouTube video URL below and click the button to generate timestamps.
             </p>
+            <Timestamp />
             <div className="landing-actions">
               <button className="landing-primary">Get Started</button>
               <button className="landing-secondary">Learn More</button>
-              <Timestamp />
+              
             </div>
           </section>
           {/* <Bumpups /> */}

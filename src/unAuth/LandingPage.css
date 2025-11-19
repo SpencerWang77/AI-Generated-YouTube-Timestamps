@@ -27,6 +27,8 @@
   width: 70%;
   margin: 0 auto;
   border: 1px solid rgba(102, 126, 234, 0.1);
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevents horizontal overflow */
 }
 
 .landing-hero {
@@ -52,6 +54,7 @@
 
 .landing-description {
   margin: 0;
+  margin-top: 20px;
   font-size: 1.05rem;
   color: #c8cad8;
   line-height: 1.6;
@@ -106,5 +109,13 @@
 
   .landing-content {
     padding: 32px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-content {
+    padding: 24px;
+    width: 95%;
   }
 }

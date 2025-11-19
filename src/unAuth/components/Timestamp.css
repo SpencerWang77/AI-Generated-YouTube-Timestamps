@@ -1,21 +1,126 @@
-.timestamp {
-  display: inline-flex;
+/* src/components/ Timestamp.css */
+
+.timestamp-widget {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Input + button container */
+.timestamp-input-row {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  background: rgba(139, 92, 246, 0.15);
-  border-radius: 999px;
-  font-size: 0.9rem;
-  color: #c4b5fd;
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  background-color: #303134;
+  border-radius: 14px;
+  padding: 0 6px 0 12px;
+  height: 48px;
+  min-width: 0; /* Allows flex items to shrink below their content size */
 }
 
-.timestamp span {
+/* Link icon */
+.timestamp-input-icon {
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+/* Input styling */
+.timestamp-input {
+  flex: 1;
+  min-width: 0; /* Allows input to shrink */
+  border: none;
+  background: transparent;
+  color: #ffffff;
+  padding: 10px 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Animated Generate button */
+.timestamp-button {
+  border: none;
+  padding: 10px 20px;
+  margin-left: 8px;
+  border-radius: 12px;
+  background-color: #1a73e8;
+  color: #ffffff;
   font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  transition: background-color 0.2s ease,
+              transform 0.15s ease,
+              box-shadow 0.15s ease;
+  flex-shrink: 0; /* Prevents button from shrinking */
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
-.timestamp time {
-  font-variant-numeric: tabular-nums;
-  color: #8b5cf6;
+/* Hover animation */
+.timestamp-button:hover {
+  background-color: #1666cc;
+  transform: translateY(-1px) scale(1.04);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
 }
 
+/* Click effect */
+.timestamp-button:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Error message */
+.timestamp-error {
+  margin-top: 6px;
+  color: #ff8a80;
+  font-size: 13px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .timestamp-widget {
+    max-width: 100%;
+  }
+
+  .timestamp-input-row {
+    padding: 0 4px 0 10px;
+    height: 44px;
+  }
+
+  .timestamp-input {
+    padding: 8px 6px;
+    font-size: 13px;
+  }
+
+  .timestamp-input-icon {
+    font-size: 16px;
+    margin-right: 4px;
+  }
+
+  .timestamp-button {
+    padding: 8px 16px;
+    margin-left: 6px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .timestamp-input-row {
+    padding: 0 4px 0 8px;
+    height: 42px;
+  }
+
+  .timestamp-input {
+    padding: 8px 4px;
+    font-size: 12px;
+  }
+
+  .timestamp-input-icon {
+    font-size: 14px;
+    margin-right: 3px;
+  }
+
+  .timestamp-button {
+    padding: 8px 12px;
+    margin-left: 4px;
+    font-size: 12px;
+  }
+}

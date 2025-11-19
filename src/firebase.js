@@ -19,12 +19,9 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Analytics only in browser environment (commented out for now)
-// let analytics;
-// if (typeof window !== 'undefined') {
-//   analytics = getAnalytics(app);
-// }
 
-// Export app so it can be used in other files (for Firestore, Auth, etc.)
-export { app };
-// export { app, analytics }; // Uncomment if you enable analytics
+let analytics;
+if (typeof window !== 'undefined') {
+  analytics = getAnalytics(app);
+}
+export {app, analytics}

@@ -1,0 +1,44 @@
+.bumpups {
+  margin-top: 40px;
+}
+
+.bumpups-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+}
+
+.bumpups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.bumpup-card {
+  background: var(--bg-tertiary);
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid var(--blue-purple-border-light);
+  box-shadow: 0 4px 12px var(--shadow-light);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.bumpup-card:hover {
+  border-color: var(--purple-border);
+  transform: translateY(-2px);
+}
+
+.bumpup-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.bumpup-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+

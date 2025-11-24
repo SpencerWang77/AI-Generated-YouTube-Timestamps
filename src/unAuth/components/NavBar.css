@@ -8,6 +8,9 @@
   border-radius: 16px;
   box-shadow: 0 12px 30px var(--shadow-medium);
   border: 1px solid var(--blue-purple-border-light);
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
 
 .nav-brand {

@@ -19,18 +19,19 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
-const functions = getFunctions(app);
-if (
-  window.location.hostname === 'localhost' ||
-  process.env_REACT_APP_ENV === 'local'
-) {
-  connectFunctionsEmulator(functions, 'localhost', 5001);
-}
-export {app, analytics, functions}
-
-
+// Initialize analytics only in browser environment
+let analytics = null;
 if (typeof window !== 'undefined') {
   analytics = getAnalytics(app);
 }
+
+const functions = getFunctions(app);
+if (
+  typeof window !== 'undefined' &&
+  window.location.hostname === 'localhost'
+) {
+  connectFunctionsEmulator(functions, 'localhost', 5001);
+}
+
+export {app, analytics, functions}

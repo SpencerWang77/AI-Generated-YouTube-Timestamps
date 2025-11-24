@@ -270,3 +270,1318 @@ specVersion: v1alpha1
 └─────────────────────────┴───────────────┴─────────────────────┘
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
+[debug] [2025-11-24T02:21:39.042Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/requirements.txt changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/requirements.txt changed, reloading triggers"}}
+[debug] [2025-11-24T02:21:40.045Z] Customer code is not Node
+[debug] [2025-11-24T02:21:40.046Z] Validating python source
+[debug] [2025-11-24T02:21:40.046Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:21:40.050Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:21:40.052Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:21:40.139Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:21:40.143Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:21:40.144Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:40] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:21:40.656Z] Got response from /__/functions.yaml endpoints:
+  on_request_example:
+    availableMemoryMb: null
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: on_request_example
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:40] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  6931 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: on_request_example. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: on_request_example."}}
+[debug] [2025-11-24T02:21:45.602Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:21:46.604Z] Customer code is not Node
+[debug] [2025-11-24T02:21:46.604Z] Validating python source
+[debug] [2025-11-24T02:21:46.604Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:21:46.606Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:21:46.607Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:21:46.655Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:21:46.658Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:21:46.658Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] [2025-11-24 02:21:47,164] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:47] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:21:47.166Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:47] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  7011 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:21:47.268Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:21:48.271Z] Customer code is not Node
+[debug] [2025-11-24T02:21:48.272Z] Validating python source
+[debug] [2025-11-24T02:21:48.272Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:21:48.273Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:21:48.274Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:21:48.322Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:21:48.326Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:21:48.326Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+Press CTRL+C to quit
+
+[error] [2025-11-24 02:21:49,066] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:49] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:21:49.067Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:49] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  7033 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:21:52.149Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:21:52.150Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/requirements.txt changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/requirements.txt changed, reloading triggers"}}
+[debug] [2025-11-24T02:21:53.151Z] Customer code is not Node
+[debug] [2025-11-24T02:21:53.151Z] Validating python source
+[debug] [2025-11-24T02:21:53.151Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:21:53.152Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:21:53.153Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:21:53.201Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:21:53.205Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:21:53.205Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] [2025-11-24 02:21:53,710] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:53] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:21:53.713Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:53] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  7107 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:21:53.942Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:21:54.944Z] Customer code is not Node
+[debug] [2025-11-24T02:21:54.945Z] Validating python source
+[debug] [2025-11-24T02:21:54.945Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:21:54.946Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:21:54.947Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:21:54.995Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:21:54.999Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:21:54.999Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] [2025-11-24 02:21:55,504] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:55] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:21:55.508Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:21:55] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  7136 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:23:57.374Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/requirements.txt changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/requirements.txt changed, reloading triggers"}}
+[debug] [2025-11-24T02:23:58.377Z] Customer code is not Node
+[debug] [2025-11-24T02:23:58.378Z] Validating python source
+[debug] [2025-11-24T02:23:58.378Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:23:58.380Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:23:58.381Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:23:58.434Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:23:58.439Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:23:58.440Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] [2025-11-24 02:23:58,945] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:23:58] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:23:58.948Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:23:58] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  8504 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:23:58.990Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:23:59.153Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:24:00.155Z] Customer code is not Node
+[debug] [2025-11-24T02:24:00.156Z] Validating python source
+[debug] [2025-11-24T02:24:00.156Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:24:00.156Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:24:00.157Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:24:00.239Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:24:00.243Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:24:00.243Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] [2025-11-24 02:24:00,746] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:24:00] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:24:00.748Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:24:00] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  8529 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:24:01.131Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:24:02.141Z] Customer code is not Node
+[debug] [2025-11-24T02:24:02.142Z] Validating python source
+[debug] [2025-11-24T02:24:02.142Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:24:02.145Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:24:02.148Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:24:02.213Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:24:02.217Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:24:02.217Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] [2025-11-24 02:24:02,724] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:24:02] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:24:02.727Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:24:02] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  8551 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:24:02.763Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:24:03.765Z] Customer code is not Node
+[debug] [2025-11-24T02:24:03.766Z] Validating python source
+[debug] [2025-11-24T02:24:03.766Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:24:03.767Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:24:03.768Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:24:03.822Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:24:03.825Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:24:03.826Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[error]  * Tip: There are .env files present. Install python-dotenv to use them.
+
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] [2025-11-24 02:24:04,333] ERROR in app: Exception on /__/functions.yaml [GET]
+Traceback (most recent call last):
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 122, in get_functions_yaml
+    functions = get_functions()
+                ^^^^^^^^^^^^^^^
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py", line 40, in get_functions
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/spencerwang/Desktop/projects/my-react-app/functions/main.py", line 8, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:24:04] "GET /__/functions.yaml HTTP/1.1" 500 -
+
+[debug] [2025-11-24T02:24:04.337Z] Got response code 500; body <!doctype html>
+<html lang=en>
+<title>500 Internal Server Error</title>
+<h1>Internal Server Error</h1>
+<p>The server encountered an internal error and was unable to complete your request. Either the server is overloaded or there is an error in the application.</p>
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:24:04] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1:  8573 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2025-11-24T02:26:45.516Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:26:46.518Z] Customer code is not Node
+[debug] [2025-11-24T02:26:46.519Z] Validating python source
+[debug] [2025-11-24T02:26:46.519Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:26:46.522Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:26:46.524Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:26:46.613Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:26:46.618Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:26:46.618Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:47] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:47] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:26:47.131Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:47] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:47] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 10590 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[info] ✔  functions[us-central1-generate_timestamps]: http function initialized (http://127.0.0.1:5001/ai--timestamps-5894f/us-central1/generate_timestamps). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/ai--timestamps-5894f/us-central1/generate_timestamps)."}}
+[debug] [2025-11-24T02:26:47.390Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:26:48.392Z] Customer code is not Node
+[debug] [2025-11-24T02:26:48.392Z] Validating python source
+[debug] [2025-11-24T02:26:48.392Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:26:48.393Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:26:48.393Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:26:48.436Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:26:48.439Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:26:48.439Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+
+[info]  * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:48] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:48] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:26:48.954Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:48] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:48] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 10623 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T02:26:52.703Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:26:53.704Z] Customer code is not Node
+[debug] [2025-11-24T02:26:53.705Z] Validating python source
+[debug] [2025-11-24T02:26:53.705Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:26:53.705Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:26:53.706Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:26:53.759Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:26:53.762Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:26:53.763Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:54] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:54] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:26:54.274Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:54] "GET /__/quitquitquit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:54] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 10683 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T02:26:54.309Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:26:55.310Z] Customer code is not Node
+[debug] [2025-11-24T02:26:55.311Z] Validating python source
+[debug] [2025-11-24T02:26:55.311Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:26:55.312Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:26:55.312Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:26:55.365Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:26:55.368Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:26:55.368Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:55] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:55] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:26:55.878Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:26:55] "GET /__/quitquitquit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:26:55] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 10707 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T02:26:58.861Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:26:59.861Z] Customer code is not Node
+[debug] [2025-11-24T02:26:59.862Z] Validating python source
+[debug] [2025-11-24T02:26:59.864Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:26:59.865Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:26:59.866Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:26:59.924Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:26:59.928Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:26:59.928Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:00] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:00] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:27:00.446Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:00] "GET /__/quitquitquit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:00] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 10768 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T02:27:00.631Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:27:01.633Z] Customer code is not Node
+[debug] [2025-11-24T02:27:01.633Z] Validating python source
+[debug] [2025-11-24T02:27:01.633Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:27:01.634Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:27:01.634Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:27:01.682Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:27:01.686Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:27:01.686Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:02] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:02] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:27:02.200Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:02] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:02] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 10790 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T02:27:17.259Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T02:27:18.261Z] Customer code is not Node
+[debug] [2025-11-24T02:27:18.262Z] Validating python source
+[debug] [2025-11-24T02:27:18.262Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:27:18.265Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:27:18.266Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:27:18.333Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:27:18.336Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:27:18.337Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:18] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:18] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:27:18.860Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:18] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:18] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 10990 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T02:27:18.991Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T02:27:19.993Z] Customer code is not Node
+[debug] [2025-11-24T02:27:19.994Z] Validating python source
+[debug] [2025-11-24T02:27:19.994Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T02:27:19.996Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T02:27:19.997Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T02:27:20.066Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T02:27:20.069Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T02:27:20.069Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:20] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:20] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T02:27:20.590Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 02:27:20] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 02:27:20] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 11018 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T03:01:05.659Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T03:01:06.666Z] Customer code is not Node
+[debug] [2025-11-24T03:01:06.666Z] Validating python source
+[debug] [2025-11-24T03:01:06.666Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T03:01:06.670Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T03:01:06.672Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T03:01:06.749Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T03:01:06.753Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T03:01:06.753Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:07] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:07] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T03:01:07.267Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  get_youtube_video_info:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: get_youtube_video_info
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:07] "GET /__/quitquitquit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:07] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 14567 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps, get_youtube_video_info. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps, get_youtube_video_info."}}
+[info] ✔  functions[us-central1-get_youtube_video_info]: http function initialized (http://127.0.0.1:5001/ai--timestamps-5894f/us-central1/get_youtube_video_info). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/ai--timestamps-5894f/us-central1/get_youtube_video_info)."}}
+[debug] [2025-11-24T03:01:07.549Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T03:01:08.550Z] Customer code is not Node
+[debug] [2025-11-24T03:01:08.550Z] Validating python source
+[debug] [2025-11-24T03:01:08.550Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T03:01:08.550Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T03:01:08.551Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T03:01:08.596Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T03:01:08.601Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T03:01:08.601Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:09] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:09] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T03:01:09.241Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  get_youtube_video_info:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: get_youtube_video_info
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:09] "GET /__/quitquitquit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:09] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 14593 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps, get_youtube_video_info. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps, get_youtube_video_info."}}
+[debug] [2025-11-24T03:01:21.514Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T03:01:22.518Z] Customer code is not Node
+[debug] [2025-11-24T03:01:22.519Z] Validating python source
+[debug] [2025-11-24T03:01:22.519Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T03:01:22.521Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T03:01:22.522Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T03:01:22.601Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T03:01:22.605Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T03:01:22.605Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:23] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:23] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T03:01:23.119Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  get_youtube_video_info:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: get_youtube_video_info
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:23] "GET /__/quitquitquit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:23] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 14767 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps, get_youtube_video_info. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps, get_youtube_video_info."}}
+[debug] [2025-11-24T03:01:23.196Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T03:01:24.196Z] Customer code is not Node
+[debug] [2025-11-24T03:01:24.197Z] Validating python source
+[debug] [2025-11-24T03:01:24.197Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T03:01:24.197Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T03:01:24.198Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T03:01:24.245Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T03:01:24.248Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T03:01:24.248Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:24] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:24] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T03:01:24.767Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+  get_youtube_video_info:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: get_youtube_video_info
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:01:24] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:01:24] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 14791 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps, get_youtube_video_info. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps, get_youtube_video_info."}}
+[debug] [2025-11-24T03:02:03.314Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/main.py changed, reloading triggers"}}
+[debug] [2025-11-24T03:02:04.316Z] Customer code is not Node
+[debug] [2025-11-24T03:02:04.316Z] Validating python source
+[debug] [2025-11-24T03:02:04.316Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T03:02:04.318Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T03:02:04.318Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T03:02:04.405Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T03:02:04.409Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T03:02:04.409Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:02:04] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:02:04] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T03:02:04.920Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:02:04] "GET /__/quitquitquit HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:02:04] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 15244 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T03:02:05.028Z] File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/spencerwang/Desktop/projects/my-react-app/functions/__pycache__/main.cpython-312.pyc changed, reloading triggers"}}
+[debug] [2025-11-24T03:02:06.030Z] Customer code is not Node
+[debug] [2025-11-24T03:02:06.030Z] Validating python source
+[debug] [2025-11-24T03:02:06.030Z] Building python source
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T03:02:06.032Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-11-24T03:02:06.033Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2025-11-24T03:02:06.092Z] stdout: /Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions
+
+[debug] [2025-11-24T03:02:06.097Z] Running admin server with args: ["python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""] and env: {"GCLOUD_PROJECT":"ai--timestamps-5894f","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"ai--timestamps-5894f","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","CLOUD_TASKS_EMULATOR_HOST":"127.0.0.1:9499","FIREBASE_CONFIG":"{\"storageBucket\":\"ai--timestamps-5894f.firebasestorage.app\",\"projectId\":\"ai--timestamps-5894f\"}","GOOGLE_APPLICATION_CREDENTIALS":"/Users/spencerwang/.config/firebase/spencerwang4014_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in /Users/spencerwang/Desktop/projects/my-react-app/functions
+[debug] [2025-11-24T03:02:06.097Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","python3.12","\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:02:06] "GET /__/functions.yaml HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:02:06] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2025-11-24T03:02:06.609Z] Got response from /__/functions.yaml endpoints:
+  generate_timestamps:
+    availableMemoryMb: null
+    callableTrigger: {}
+    concurrency: null
+    cpu: gcf_gen1
+    entryPoint: generate_timestamps
+    ingressSettings: null
+    labels:
+      deployment-callable: 'true'
+    maxInstances: 10
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [24/Nov/2025 03:02:06] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] INFO:werkzeug:127.0.0.1 - - [24/Nov/2025 03:02:06] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[error] /bin/sh: line 1: 15272 Terminated: 15          python3.12 "/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/lib/python3.12/site-packages/firebase_functions/private/serving.py"
+
+[info] ✔  functions: Loaded functions definitions from source: generate_timestamps. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: generate_timestamps."}}
+[debug] [2025-11-24T03:39:25.521Z] [work-queue] {"queuedWork":["/ai--timestamps-5894f/us-central1/generate_timestamps-2025-11-24T03:39:25.520Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-11-24T03:39:25.524Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ai--timestamps-5894f/us-central1/generate_timestamps-2025-11-24T03:39:25.520Z"],"workRunningCount":1}
+[debug] [2025-11-24T03:39:25.524Z] Accepted request OPTIONS /ai--timestamps-5894f/us-central1/generate_timestamps --> us-central1-generate_timestamps
+[debug] [2025-11-24T03:39:25.532Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-11-24T03:39:25.533Z] [functions] Got req.url=/ai--timestamps-5894f/us-central1/generate_timestamps, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ai--timestamps-5894f/us-central1/generate_timestamps, mapping to path=/"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-11-24T03:39:25.538Z] Running command with virtualenv: command=., args=["\"/Users/spencerwang/Desktop/projects/my-react-app/functions/venv/bin/activate\"","&&","functions-framework"]
+[debug] [2025-11-24T03:39:25.539Z] [worker-pool] addWorker(us-central1-generate_timestamps) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-generate_timestamps)"}}
+[debug] [2025-11-24T03:39:25.540Z] [worker-pool] Adding worker with key us-central1-generate_timestamps, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-generate_timestamps, total=1"}}
+[info] >  WARNING:root:Request has invalid method. GET {"user":"WARNING:root:Request has invalid method. GET","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING:root:Request has invalid method. GET"}}
+[info] >  ERROR:root:Invalid request, unable to process. {"user":"ERROR:root:Invalid request, unable to process.","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m ERROR:root:Invalid request, unable to process."}}
+[debug] [2025-11-24T03:39:26.259Z] [worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"[worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: IDLE"}}
+[debug] [2025-11-24T03:39:26.259Z] [worker-pool] submitRequest(triggerId=us-central1-generate_timestamps) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-generate_timestamps)"}}
+[info] i  functions: Beginning execution of "us-central1-generate_timestamps" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Beginning execution of \"us-central1-generate_timestamps\""}}
+[debug] [2025-11-24T03:39:26.259Z] [worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"[worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: BUSY"}}
+[debug] [2025-11-24T03:39:26.262Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-generate_timestamps" in 3.233458ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finished \"us-central1-generate_timestamps\" in 3.233458ms"}}
+[debug] [2025-11-24T03:39:26.262Z] [worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"[worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: IDLE"}}
+[debug] [2025-11-24T03:39:26.262Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-11-24T03:39:26.262Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-11-24T03:39:26.263Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2025-11-24T03:39:26.265Z] [work-queue] {"queuedWork":["/ai--timestamps-5894f/us-central1/generate_timestamps-2025-11-24T03:39:26.265Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2025-11-24T03:39:26.265Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/ai--timestamps-5894f/us-central1/generate_timestamps-2025-11-24T03:39:26.265Z"],"workRunningCount":1}
+[debug] [2025-11-24T03:39:26.265Z] Accepted request POST /ai--timestamps-5894f/us-central1/generate_timestamps --> us-central1-generate_timestamps
+[debug] [2025-11-24T03:39:26.266Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2025-11-24T03:39:26.266Z] [functions] Got req.url=/ai--timestamps-5894f/us-central1/generate_timestamps, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/ai--timestamps-5894f/us-central1/generate_timestamps, mapping to path=/"}}
+[debug] [2025-11-24T03:39:26.266Z] [worker-pool] submitRequest(triggerId=us-central1-generate_timestamps) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-generate_timestamps)"}}
+[info] i  functions: Beginning execution of "us-central1-generate_timestamps" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Beginning execution of \"us-central1-generate_timestamps\""}}
+[debug] [2025-11-24T03:39:26.266Z] [worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"[worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: BUSY"}}
+[info] >  INFO:root:Callable request verification passed: {'app': 'MISSING', 'auth': 'MISSING', 'logging.googleapis.com/labels': {'firebase-log-type': 'callable-request-verification'}} {"user":"INFO:root:Callable request verification passed: {'app': 'MISSING', 'auth': 'MISSING', 'logging.googleapis.com/labels': {'firebase-log-type': 'callable-request-verification'}}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:root:Callable request verification passed: {'app': 'MISSING', 'auth': 'MISSING', 'logging.googleapis.com/labels': {'firebase-log-type': 'callable-request-verification'}}"}}
+[info] >  INFO:main:generate_timestamps function called {"user":"INFO:main:generate_timestamps function called","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:generate_timestamps function called"}}
+[info] >  INFO:main:Request data: {'url': 'https://www.youtube.com/watch?v=E5SmMV9-UbM'} {"user":"INFO:main:Request data: {'url': 'https://www.youtube.com/watch?v=E5SmMV9-UbM'}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:Request data: {'url': 'https://www.youtube.com/watch?v=E5SmMV9-UbM'}"}}
+[info] >  INFO:main:Received YouTube URL: https://www.youtube.com/watch?v=E5SmMV9-UbM {"user":"INFO:main:Received YouTube URL: https://www.youtube.com/watch?v=E5SmMV9-UbM","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:Received YouTube URL: https://www.youtube.com/watch?v=E5SmMV9-UbM"}}
+[info] >  INFO:main:API key loaded successfully {"user":"INFO:main:API key loaded successfully","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:API key loaded successfully"}}
+[info] >  INFO:main:Prepared payload: { {"user":"INFO:main:Prepared payload: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:Prepared payload: {"}}
+[info] >    "url": "https://www.youtube.com/watch?v=E5SmMV9-UbM", {"user":"  \"url\": \"https://www.youtube.com/watch?v=E5SmMV9-UbM\",","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m   \"url\": \"https://www.youtube.com/watch?v=E5SmMV9-UbM\","}}
+[info] >    "model": "bump-1.0", {"user":"  \"model\": \"bump-1.0\",","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m   \"model\": \"bump-1.0\","}}
+[info] >    "language": "en", {"user":"  \"language\": \"en\",","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m   \"language\": \"en\","}}
+[info] >    "timestamps_style": "long" {"user":"  \"timestamps_style\": \"long\"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m   \"timestamps_style\": \"long\""}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[info] >  INFO:main:Making request to Bumpups API... {"user":"INFO:main:Making request to Bumpups API...","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:Making request to Bumpups API..."}}
+[info] >  INFO:httpx:HTTP Request: POST https://api.bumpups.com/general/timestamps "HTTP/1.1 200 OK" {"user":"INFO:httpx:HTTP Request: POST https://api.bumpups.com/general/timestamps \"HTTP/1.1 200 OK\"","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:httpx:HTTP Request: POST https://api.bumpups.com/general/timestamps \"HTTP/1.1 200 OK\""}}
+[info] >  INFO:main:Bumpups API response status: 200 {"user":"INFO:main:Bumpups API response status: 200","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:Bumpups API response status: 200"}}
+[info] >  INFO:main:Successfully received timestamps. Video duration: 7 minutes {"user":"INFO:main:Successfully received timestamps. Video duration: 7 minutes","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:Successfully received timestamps. Video duration: 7 minutes"}}
+[info] >  INFO:main:Number of timestamps: 4 {"user":"INFO:main:Number of timestamps: 4","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"\u001b[90m> \u001b[39m INFO:main:Number of timestamps: 4"}}
+[debug] [2025-11-24T03:39:38.291Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-generate_timestamps" in 12024.694459ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finished \"us-central1-generate_timestamps\" in 12024.694459ms"}}
+[debug] [2025-11-24T03:39:38.291Z] [worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"[worker-us-central1-generate_timestamps-aa4149c5-8c53-4d07-859c-c2e1957f7812]: IDLE"}}
+[debug] [2025-11-24T03:39:38.291Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2025-11-24T03:39:38.292Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-generate_timestamps"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2025-11-24T03:39:38.292Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}

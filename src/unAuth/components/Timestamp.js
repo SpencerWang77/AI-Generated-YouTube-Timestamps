@@ -3,16 +3,31 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
+import { httpsCallable } from 'firebase/functions';
+import { functions } from '../../firebase';
 import './Timestamp.css';
+
+// Error boundary for Firebase functions
+let functionsAvailable = true;
+try {
+  if (!functions) {
+    functionsAvailable = false;
+    console.warn('Firebase functions not available');
+  }
+} catch (error) {
+  functionsAvailable = false;
+  console.error('Error initializing Firebase functions:', error);
+}
 
 const YOUTUBE_URL_REGEX =
   /^(https?:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)[\w-]{11}([&?][^\s]*)?$/;
 
-function Timestamp() {
+function Timestamp({ onTimestampsGenerated }) {
   const [url, setUrl] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [videoData, setVideoData] = useState(null);
+  const [loadingTimestamps, setLoadingTimestamps] = useState(false);
 
   // Extract video ID from YouTube URL
   const extractVideoId = (url) => {
@@ -24,6 +39,10 @@ function Timestamp() {
     setUrl(e.target.value);
     setError('');
     setVideoData(null); // Clear previous video data when URL changes
+    // Clear timestamps when URL changes
+    if (onTimestampsGenerated) {
+      onTimestampsGenerated(null);
+    }
   };
 
   const handleGenerate = async () => {
@@ -104,6 +123,44 @@ function Timestamp() {
     }
   };
 
+  const handleGenerateTimestamps = async () => {
+    console.log('Generate Timestamps button clicked');
+    
+    if (!url.trim()) {
+      setError('Please enter a YouTube video URL first.');
+      return;
+    }
+
+    if (!functionsAvailable || !functions) {
+      setError('Firebase functions are not available. Please check your configuration.');
+      return;
+    }
+
+    setLoadingTimestamps(true);
+    setError('');
+
+    try {
+      const generateTimestamps = httpsCallable(functions, 'generate_timestamps');
+      const payload = { url: url.trim() };
+      console.log('Payload being sent:', payload);
+      console.log('Calling generate_timestamps with URL:', url);
+      
+      const result = await generateTimestamps(payload);
+      console.log('Timestamps data received:', result.data);
+      
+      // Pass timestamps data to parent component
+      if (onTimestampsGenerated) {
+        onTimestampsGenerated(result.data);
+      }
+      
+    } catch (err) {
+      console.error('Error generating timestamps:', err);
+      setError(err.message || 'An error occurred while generating timestamps.');
+    } finally {
+      setLoadingTimestamps(false);
+    }
+  };
+
   return (
     <div className="timestamp-widget">
       <div className="timestamp-input-row">
@@ -156,6 +213,29 @@ function Timestamp() {
             ></iframe>
           </div>
           <h3 className="timestamp-title">{videoData.title}</h3>
+          
+          <button
+            type="button"
+            className="timestamp-button"
+            onClick={handleGenerateTimestamps}
+            disabled={loadingTimestamps}
+            style={{ marginTop: '1rem' }}
+          >
+            {loadingTimestamps && (
+              <FontAwesomeIcon 
+                icon={faSpinner} 
+                className="timestamp-button-spinner"
+                spin
+              />
+            )}
+            Generate Timestamps
+          </button>
+          
+          {loadingTimestamps && (
+            <div className="timestamp-loading">
+              <p>Generating timestamps...</p>
+            </div>
+          )}
         </div>
       )}
     </div>

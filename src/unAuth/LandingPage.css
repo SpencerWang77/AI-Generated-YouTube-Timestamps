@@ -29,6 +29,7 @@
   border: 1px solid var(--blue-purple-border-light);
   box-sizing: border-box;
   overflow-x: hidden; /* Prevents horizontal overflow */
+  margin-top:30px
 }
 
 .landing-hero {

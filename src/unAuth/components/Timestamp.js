@@ -22,12 +22,13 @@ try {
 const YOUTUBE_URL_REGEX =
   /^(https?:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)[\w-]{11}([&?][^\s]*)?$/;
 
-function Timestamp({ onTimestampsGenerated }) {
+function Timestamp({ onTimestampsGenerated, onVideoIdChange }) {
   const [url, setUrl] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [videoData, setVideoData] = useState(null);
   const [loadingTimestamps, setLoadingTimestamps] = useState(false);
+  const [videoTime, setVideoTime] = useState(0);
 
   // Extract video ID from YouTube URL
   const extractVideoId = (url) => {
@@ -39,9 +40,14 @@ function Timestamp({ onTimestampsGenerated }) {
     setUrl(e.target.value);
     setError('');
     setVideoData(null); // Clear previous video data when URL changes
+    setVideoTime(0); // Reset video time
     // Clear timestamps when URL changes
     if (onTimestampsGenerated) {
       onTimestampsGenerated(null);
+    }
+    // Clear video ID
+    if (onVideoIdChange) {
+      onVideoIdChange(null, null);
     }
   };
 
@@ -105,6 +111,14 @@ function Timestamp({ onTimestampsGenerated }) {
                      video.snippet.thumbnails.medium?.url || 
                      video.snippet.thumbnails.default?.url,
         });
+        
+        // Notify parent component of video ID and provide jump function
+        if (onVideoIdChange) {
+          onVideoIdChange(videoId, (seconds) => {
+            setVideoTime(seconds);
+          });
+        }
+        
         console.log('Video data set successfully');
       } else {
         setError('Video not found. Please check the URL.');
@@ -204,12 +218,13 @@ function Timestamp({ onTimestampsGenerated }) {
         <div className="timestamp-video-info">
           <div className="timestamp-video-wrapper">
             <iframe
-              src={`https://www.youtube.com/embed/${videoData.videoId}`}
+              src={`https://www.youtube.com/embed/${videoData.videoId}${videoTime > 0 ? `?start=${videoTime}&autoplay=1` : ''}`}
               title={videoData.title}
               className="timestamp-video-player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
+              key={videoTime}
             ></iframe>
           </div>
           <h3 className="timestamp-title">{videoData.title}</h3>

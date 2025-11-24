@@ -1,5 +1,5 @@
 // src/components/Timestamp.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
@@ -22,13 +22,36 @@ try {
 const YOUTUBE_URL_REGEX =
   /^(https?:\/\/)?(www\.)?(youtube\.com\/watch\?v=|youtu\.be\/)[\w-]{11}([&?][^\s]*)?$/;
 
-function Timestamp({ onTimestampsGenerated, onVideoIdChange }) {
+function Timestamp({ onTimestampsGenerated, onVideoIdChange, historyItemToLoad, onHistoryItemLoaded }) {
   const [url, setUrl] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const [videoData, setVideoData] = useState(null);
   const [loadingTimestamps, setLoadingTimestamps] = useState(false);
   const [videoTime, setVideoTime] = useState(0);
+
+  // Handle loading history items
+  useEffect(() => {
+    if (historyItemToLoad) {
+      setUrl(historyItemToLoad.url);
+      setVideoData({
+        videoId: historyItemToLoad.videoId,
+        title: historyItemToLoad.title,
+        thumbnail: historyItemToLoad.thumbnail
+      });
+      
+      // Notify parent component
+      if (onVideoIdChange) {
+        onVideoIdChange(historyItemToLoad.videoId, (seconds) => {
+          setVideoTime(seconds);
+        }, historyItemToLoad.url);
+      }
+      
+      if (onHistoryItemLoaded) {
+        onHistoryItemLoaded();
+      }
+    }
+  }, [historyItemToLoad, onVideoIdChange, onHistoryItemLoaded]);
 
   // Extract video ID from YouTube URL
   const extractVideoId = (url) => {
@@ -116,7 +139,7 @@ function Timestamp({ onTimestampsGenerated, onVideoIdChange }) {
         if (onVideoIdChange) {
           onVideoIdChange(videoId, (seconds) => {
             setVideoTime(seconds);
-          });
+          }, url.trim());
         }
         
         console.log('Video data set successfully');
@@ -162,9 +185,14 @@ function Timestamp({ onTimestampsGenerated, onVideoIdChange }) {
       const result = await generateTimestamps(payload);
       console.log('Timestamps data received:', result.data);
       
-      // Pass timestamps data to parent component
-      if (onTimestampsGenerated) {
-        onTimestampsGenerated(result.data);
+      // Pass timestamps data and video info to parent component
+      if (onTimestampsGenerated && videoData) {
+        onTimestampsGenerated(result.data, {
+          videoId: videoData.videoId,
+          title: videoData.title,
+          thumbnail: videoData.thumbnail,
+          url: url.trim()
+        });
       }
       
     } catch (err) {

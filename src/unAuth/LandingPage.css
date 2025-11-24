@@ -30,7 +30,12 @@
   border: 1px solid var(--blue-purple-border-light);
   box-sizing: border-box;
   overflow-x: hidden; /* Prevents horizontal overflow */
-  margin-top:30px
+  margin-top: 30px;
+}
+
+.landing-history-section {
+  width: 70%;
+  margin: 32px auto 0;
 }
 
 .landing-hero {
@@ -113,11 +118,19 @@
     padding: 32px;
     width: 90%;
   }
+
+  .landing-history-section {
+    width: 90%;
+  }
 }
 
 @media (max-width: 480px) {
   .landing-content {
     padding: 24px;
+    width: 95%;
+  }
+
+  .landing-history-section {
     width: 95%;
   }
 }

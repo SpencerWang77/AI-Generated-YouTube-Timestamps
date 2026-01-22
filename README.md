@@ -5,9 +5,9 @@ Welcome to Spencer's first software project! This is a web application that gene
 ## 🎯 Overview
 
 The AI Timestamp Generator is a React-based web application that allows users to input a YouTube video URL and automatically generate intelligent timestamps using the Bumpups API. The app features a clean, modern UI with video playback, clickable timestamps, and a history feature to save and reload previous timestamp generations.
+
 <img width="1440" height="779" alt="image" src="https://github.com/user-attachments/assets/7ee7c642-8179-49e5-b77f-bafa138ddcb7" />
 <img width="1440" height="779" alt="image" src="https://github.com/user-attachments/assets/bd3ffc75-6c2c-4ee5-ae1e-96a4ad96d883" />
-
 
 ## ✨ Features
 
